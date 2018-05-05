@@ -1,8 +1,8 @@
 /*jslint node: true */
 'use strict';
 
-var db = require('byteballcore/db.js');
-var storage = require('byteballcore/storage.js');
+var db = require('dag-pizza-dough/db.js');
+var storage = require('dag-pizza-dough/storage.js');
 var moment = require('moment');
 var async = require('async');
 

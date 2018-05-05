@@ -1,8 +1,8 @@
 /*jslint node: true */
 "use strict";
 require('./relay');
-var conf = require('byteballcore/conf.js');
-var eventBus = require('byteballcore/event_bus.js');
+var conf = require('dag-pizza-dough/conf.js');
+var eventBus = require('dag-pizza-dough/event_bus.js');
 var express = require('express');
 var app = express();
 var server = require('http').Server(app);
