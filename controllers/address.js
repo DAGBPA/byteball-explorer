@@ -177,11 +177,11 @@ function getAddressInfo(address, cb) {
 	getAddressTransactions(address, BIGINT, BIGINT, function(objTransactions, newLastInputsROWID, newLastOutputsROWID) {
 		db.query("SELECT * FROM outputs WHERE address=? and is_spent=0 ORDER BY output_id DESC", [address], function(rowsOutputs) {
 			if (objTransactions !== null || rowsOutputs.length) {
-				var objBalance = {bytes: 0}, unspent = [];
+				var objBalance = {pizza: 0}, unspent = [];
 				rowsOutputs.forEach(function(row) {
 					unspent.push(row);
 					if (row.asset === null) {
-						objBalance.bytes += row.amount;
+						objBalance.pizza += row.amount;
 					}
 					else {
 						if (!objBalance[row.asset]) objBalance[row.asset] = 0;
