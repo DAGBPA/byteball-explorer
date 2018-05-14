@@ -42,8 +42,9 @@ exports.initial_witnesses = [
 ];
 */
 
+
 exports.initial_peers = [
-	'wss://dagpizza.org/pp'
+	'ws://127.0.0.1:6611'
 ];
 
 console.log('finished explorer conf');
